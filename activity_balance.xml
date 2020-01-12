@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back9"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Balance">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="212dp"
+        android:id="@+id/i3"
+        android:src="@drawable/p2_burned"
+        android:scaleType="center"
+        />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="359dp"
+        android:layout_height="157dp"
+        android:textColor="#000000"
+        android:paddingLeft="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/i3"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="270dp"
+        android:layout_height="57dp"
+        android:inputType="numberSigned"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Balance" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et1"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/createbutton"
+        android:fontFamily="serif-monospace"
+        android:onClick="fun"
+        android:textColor="#ffffff"
+        android:textSize="25dp" />
+
+</RelativeLayout>

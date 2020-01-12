@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back1"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/i2"
+        android:layout_width="372dp"
+        android:layout_height="116dp"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/p2_burned" />
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="150dp"
+        android:background="@drawable/homebutton"
+        android:layout_height="150dp"
+        android:layout_below="@id/i2"
+        android:text="CHECK\nBALANCE"
+        android:fontFamily="serif-monospace"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:onClick="checkbalance" />
+
+    <Button
+        android:id="@+id/transaction"
+        android:layout_width="150dp"
+        android:text="LAST\n5\nTRANS."
+        android:fontFamily="serif-monospace"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:layout_height="150dp"
+        android:background="@drawable/homebutton"
+        android:layout_below="@id/i2"
+        android:layout_toRightOf="@id/check"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:onClick="lasttransactions" />
+    <Button
+        android:id="@+id/deposit"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="DEPOSIT\nMONEY"
+        android:fontFamily="serif-monospace"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:layout_below="@id/check"
+        android:background="@drawable/homebutton"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:onClick="depositbalance" />
+    <Button
+        android:id="@+id/withdraw"
+        android:text="WITHDRAW\nMONEY"
+        android:fontFamily="serif-monospace"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/homebutton"
+        android:layout_below="@id/transaction"
+        android:layout_toRightOf="@id/deposit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:onClick="withdrawamount" />
+    <Button
+        android:id="@+id/map"
+        android:layout_width="150dp"
+        android:text="\nNEARBY\nATM'S"
+        android:fontFamily="serif-monospace"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:layout_height="150dp"
+        android:layout_below="@id/deposit"
+        android:background="@drawable/homebutton"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:onClick="locatemap" />
+    <Button
+        android:id="@+id/support"
+        android:text="SUPPORT"
+        android:fontFamily="serif-monospace"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/withdraw"
+        android:layout_toRightOf="@id/deposit"
+        android:background="@drawable/homebutton"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:onClick="supportfun" />
+
+    <Button
+    android:id="@+id/logout"
+    android:layout_width="24dp"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/transaction"
+    android:background="@drawable/logout"
+    android:layout_marginLeft="-50dp"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="40dp"
+    android:layout_toRightOf="@id/i2"
+    android:onClick="logoutfun" />
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mohit"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_above="@id/transaction"
+        android:layout_marginLeft="-110dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="45dp"
+        android:layout_toRightOf="@id/i2"
+        android:onClick="logoutfun" />
+
+</RelativeLayout>

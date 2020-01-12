@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back9"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/i1"
+        android:layout_width="151dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="115dp"
+        android:src="@drawable/p2_burned" />
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/i1"
+        android:fontFamily="serif-monospace"
+        android:id="@+id/e3"
+        android:textSize="23dp"
+        android:textColor="#ffffff"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="40dp"
+        android:hint="Name " />
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:textSize="23dp"
+        android:layout_below="@id/e3"
+        android:layout_marginTop="5dp"
+        android:id="@+id/e4"
+        android:fontFamily="serif-monospace"
+        android:layout_marginLeft="40dp"
+        android:hint="Age "
+        android:inputType="numberSigned"
+        android:textColor="#ffffff"
+        />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/e4"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif-monospace"
+        android:hint="Gender"
+        android:textColor="#fff22a"
+        android:textSize="25dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiogroup1"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="145dp"
+            android:fontFamily="cursive"
+            android:text="Male"
+            android:id="@+id/r1"
+            android:textColor="#1200ff"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="-35dp"
+            android:fontFamily="cursive"
+            android:id="@+id/r2"
+            android:text="Female"
+            android:textColor="#fff310"
+            android:textSize="25dp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/e6"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/t4"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="serif-monospace"
+        android:hint="Mobile. No"
+        android:inputType="number"
+        android:textColor="#ffffff"
+        android:textSize="23dp" />
+
+    <EditText
+        android:id="@+id/e7"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/e6"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif-monospace"
+        android:hint="Email. id"
+       android:inputType="textEmailAddress"
+        android:textColor="#ffffff"
+        android:textSize="23dp" />
+    <EditText
+        android:id="@+id/e8"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/e7"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif-monospace"
+        android:hint="Date of Birth "
+        android:inputType="date"
+        android:textColor="#ffffff"
+        android:textSize="23dp" />
+    <EditText
+        android:id="@+id/e9"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/e8"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif-monospace"
+        android:hint="Account Number"
+        android:inputType="number"
+        android:textColor="#ffffff"
+        android:textSize="23dp"/>
+    <EditText
+        android:id="@+id/e10"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/e9"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:fontFamily="serif-monospace"
+        android:hint="Create Userid"
+        android:textColor="#ffffff"
+        android:textSize="23dp"/>
+    <EditText
+        android:id="@+id/e11"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/e10"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif-monospace"
+        android:hint="Create Password"
+        android:textColor="#ff102c"
+        android:inputType="numberPassword"
+        android:textSize="23dp"/>
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/e11"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/createbutton"
+        android:fontFamily="serif-monospace"
+        android:onClick="buttonvalidate"
+        android:text="Click Here"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/t5"
+        android:onClick="loginfun"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_below="@id/b3"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="serif-monospace"
+        android:hint="Already Account? Login "
+        android:textColor="#26bc05"
+        android:textSize="20dp" />
+</RelativeLayout>
